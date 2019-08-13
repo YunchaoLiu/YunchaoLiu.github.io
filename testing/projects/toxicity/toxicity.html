@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>drug toxicity visulizer</title>
+</head>
+<body>
+  <script src="ngl-master/dist/ngl.js"></script>
+  <script src="ngl-wrapper.js"></script>
+  <script>
+	load_file("aspirin.sdf", callback);// default representation is ball+stick
+
+	function callback(){// add whatever you want to do to the visualization right after loading. Below are functions you can use.
+		set_repr_ball_stick(true);
+		set_repr_line(false);
+		set_repr_surface(false);
+		set_spin(true);
+	}
+	
+	//add other functions below
+	function line(){
+		set_repr_ball_stick(false);
+		set_repr_line(true);
+		set_repr_surface(false);
+	}
+	
+	function ball_stick(){
+		set_repr_ball_stick(true);
+		set_repr_line(false);
+		set_repr_surface(false);
+	}
+	
+	function surface(){
+		set_repr_ball_stick(false);
+		set_repr_line(false);
+		set_repr_surface(true);
+	}
+
+	
+  </script>
+  <h1>Drug Toxicity Visualizer</h1>
+  <div id="viewport" style="width:400px; height:300px;"></div>
+  <button onclick = "line()">Line</button>
+  <button onclick = "ball_stick()">Ball-Stick</button>
+  <button onclick = "surface()">Surface</button>
+  <h3>instructions</h3>
+  <ul>
+	<li>i toggle stage spinning</li>
+	<li>k toggle stage rocking</li>
+	<li>p pause all stage animations</li>
+	<li>r reset stage auto view</li>
+  </ul>
+</body>
+</html>
