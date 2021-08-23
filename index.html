@@ -51,6 +51,7 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -67,20 +68,22 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Yunchao "Lance" Liu</a></h1>
-				<span class="position">PhD student in Computer Science in Vanderbilt University</span>
+				<span class="position">PhD student in Computer Science at the Vanderbilt University</span>
+
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
+						<!--<li><a href="#" data-nav-section="about">About</a></li>-->
 						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="projects">Projects</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
 						<li><a href="#" data-nav-section="publications">Publications</a></li>
+						<li><a href="#" data-nav-section="projects">Projects</a></li>
+						<!-- <li><a href="#" data-nav-section="skills">Skills</a></li>
 						<li><a href="#" data-nav-section="work">Work Experience</a></li>
-						<li><a href="#" data-nav-section="hobbies">Hobbies</a></li>
+						<li><a href="#" data-nav-section="hobbies">Hobbies</a></li> -->
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
+						<li><script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Q7gWYguOkDu71cq9vWFcp-lNT8Zlvg01aBMucKt0dl8&cl=ffffff&w=a"></script></li>
 					</ul>
 				</div>
 			</nav>
@@ -99,9 +102,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 		</aside>
 
+		
+
+
 		<div id="colorlib-main">
+
+
+
+
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<!-- <span class="heading-meta">Education</span> -->
+							<h2 class="colorlib-heading animate-box">Short Bio</h2>
+							<h2 class="colorlib-heading animate-box">Research Interest</h2>
+							Computer Aided Drug Discovery, Graph Neural Network, Self-supervised Learning
+							<h2 class="colorlib-heading animate-box">News</h2>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="flexslider js-fullheight">
 					<ul class="slides">
 				   	<li style="background-image: url(images/Won.png);">
 				   		<div class="overlay"></div>
@@ -139,10 +160,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				   		</div>
 				   	</li>
 				  	</ul>
-			  	</div>
+			  	</div> -->
 			</section>
 
-			<section class="colorlib-about" data-section="about">
+			<!-- <section class="colorlib-about" data-section="about">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-12">
@@ -193,11 +214,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 
 			
-			<section class="colorlib-services" data-section="hobbies">
+			<!-- <section class="colorlib-services" data-section="hobbies">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -274,7 +295,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			
 			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
@@ -302,7 +323,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</div>
 
-			<section class="colorlib-skills" data-section="skills">
+			<!-- <section class="colorlib-skills" data-section="skills">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -382,7 +403,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="colorlib-education" data-section="education">
 				<div class="colorlib-narrow-content">
@@ -469,7 +490,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</section>
 
-			<section class="colorlib-experience" data-section="work">
+			<!-- <section class="colorlib-experience" data-section="work">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -527,31 +548,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					               </div>
 					            </div>
 					         </article>
-<!--
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
--->
 					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
@@ -561,6 +558,54 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					      </div>
 					   </div>
 				   </div>
+				</div>
+			</section> -->
+
+			<section class="colorlib-blog" data-section="publications">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Publications</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 1, 20XX </small> | <small> Nature </small> | <small> <i class="icon-bubble3"></i> 999</small></span>
+									<h3><a href="">Coming Soon</a></h3>
+									<p>I will publish something.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 1, 20XX </small> | <small> Cell </small> | <small> <i class="icon-bubble3"></i> 999</small></span>
+									<h3><a href="">Coming Soon</a></h3>
+									<p>I will publish something</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 1, 20XX </small> | <small> IEEE conference </small> | <small> <i class="icon-bubble3"></i> 999</small></span>
+									<h3><a href="">Coming Soon</a></h3>
+									<p>I will publish something</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -638,7 +683,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+						<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="project" style="background-image: url(images/img-5.jpg);">
 								<div class="desc">
 									<div class="con">
@@ -667,7 +712,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<div class="row">
 						<div class="col-md-12 animate-box">
@@ -677,53 +722,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</section>
 
-			<section class="colorlib-blog" data-section="publications">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Read</span>
-							<h2 class="colorlib-heading">Publications</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 1, 20XX </small> | <small> Nature </small> | <small> <i class="icon-bubble3"></i> 999</small></span>
-									<h3><a href="">Coming Soon</a></h3>
-									<p>I will publish something.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 1, 20XX </small> | <small> Cell </small> | <small> <i class="icon-bubble3"></i> 999</small></span>
-									<h3><a href="">Coming Soon</a></h3>
-									<p>I will publish something</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 1, 20XX </small> | <small> IEEE conference </small> | <small> <i class="icon-bubble3"></i> 999</small></span>
-									<h3><a href="">Coming Soon</a></h3>
-									<p>I will publish something</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
+			
 
 			<section class="colorlib-contact" data-section="contact">
 				<div class="colorlib-narrow-content">
@@ -750,14 +749,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<i class="icon-map"></i>
 								</div>
 								<div class="colorlib-text">
-									<p>5144F MRB III Vanderbilt USA</p>
+									<p>5144G MRB III Vanderbilt USA</p>
 								</div>
 							</div>
 
 						</div>
 						<div class="col-md-7 col-md-push-1">
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="yunchaoliu"><a class="LI-simple-link" href='https://www.linkedin.com/in/yunchaoliu?trk=profile-badge'>Yunchao Liu</a></div>
+								<div><a class="LI-simple-link" href='https://scholar.google.com/citations?user=oFtlWfwAAAAJ&hl=en'>Google Scholar</a></div>
+								<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="yunchaoliu"><a class="LI-simple-link" href='https://www.linkedin.com/in/yunchaoliu?trk=profile-badge'>Linkedin</a></div> 
 							</div>
 						</div>
 					</div>
