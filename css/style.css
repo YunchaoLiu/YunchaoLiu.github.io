@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -405,7 +405,7 @@ body.offcanvas {
 
 .colorlib-heading {
   font-size: 18px;
-  /*margin-bottom: 4em;*/
+  margin-bottom: 4em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -418,18 +418,19 @@ body.offcanvas {
       margin-bottom: 3em; } }
 
 .lance-heading {
-  font-size: 5px;
-  margin-bottom: 4em;
+  font-size: 18px;
+  margin-top: 7em;
+  margin-bottom: 1em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
-  line-height: 1.8;
+  line-height: 0.8;
   position: relative; }
-  .lance-heading span {
+  .colorlib-heading span {
     display: block; }
   @media screen and (max-width: 768px) {
-    .lance-heading {
-      margin-bottom: 3em; } }
+    .colorlib-heading {
+      margin-bottom: 0em; } }
 
 .heading-meta {
   margin-bottom: 15px;
