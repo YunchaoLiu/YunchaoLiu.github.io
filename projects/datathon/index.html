@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Datathon</title>
+		<script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="webpage/style.css">
+	</head>
+	<body>
+
+	<h3>Visualization for Datathon</h3>
+
+	<!--<script type='text/javascript' src='webpage/topojson.v2.min.js'></script>-->
+	<script type='text/javascript' src='webpage/visualizations.js'></script>
+	<script type='text/javascript'>
+		d3.csv('data/ufo_data_cleaned.csv', function(data1){
+			d3.csv('data/air_base_pos.csv', function(data2)  {
+				d3.json('webpage/us-geo.json', function(data3){
+					d3.csv('https://archive.org/download/treatment_facilities_2016_2020/state_only.csv', function(data4){
+					// d3.csv('data/state_only.csv', function(data4){
+					// d3.csv('data/treatments_2017-2020.csv', function(data4){
+					// d3.csv('data/treatment_simp.csv', function(data4){
+
+						ufo_data = data1;
+						air_base_data = data2;
+						map_data = data3;
+						treatment_data = data4
+						// window.alert(data4)
+
+						plot_it();
+					})
+				})
+			})
+		})
+
+	</script>
+	<!-- <script>
+	console.time("totalTime:");
+	d3.csv('data/treatments_2017-2020.csv')
+	    .on("progress", function(evt) {
+	        console.log("Amount loaded: " + evt.loaded)
+	    })
+	    .get(function(data) {
+	        console.timeEnd("totalTime:");
+	    });
+	</script> -->
+	</body>
+</html>
