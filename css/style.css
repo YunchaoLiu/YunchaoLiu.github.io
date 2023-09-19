@@ -428,7 +428,7 @@ body.offcanvas {
   position: relative; }
   .colorlib-heading span {
     display: block; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1600px) {
     .colorlib-heading {
       margin-bottom: 0em; } }
 
