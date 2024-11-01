@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Summer RosettaCon 2022</title>
     <link rel="shortcut icon" href="../../images/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Poster Session of the Summer RosettaCon 2022">
-    <meta name="keywords" content="Drug Discovery, Deep Learning, Machine Learning, Geometric Deep Learning">
-    <meta name="author" content='Yunchao "Lance" Liu'>
+    <meta name="keywords" content="John Jumper, David Baker, RosettaCon">
+    <meta name="author" content='Yunchao (Lance) Liu'>
 
-    <!-- Style and Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         /* Basic Reset and Styles */
         body {
@@ -28,12 +28,12 @@
             text-align: center;
         }
         header, footer {
-            background-color: #007BFF;
-            color: #fff;
+            background-color: #ffffff;
+            color: #000;
             padding: 20px;
         }
         header img {
-            width: 150px;
+            width: 300px;
             height: auto;
             margin-bottom: 10px;
         }
@@ -45,7 +45,7 @@
             gap: 15px;
         }
         header nav ul li a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-weight: 700;
         }
@@ -68,6 +68,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            cursor: pointer;
         }
         .gallery-item img {
             width: 100%;
@@ -84,8 +85,41 @@
             color: #333;
             margin-bottom: 5px;
         }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-content {
+            max-width: 80%;
+            max-height: 80%;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            overflow: auto;
+        }
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh; /* Ensures the image doesn’t exceed 80% of the viewport height */
+        }
+        .lightbox-content h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        .lightbox-content p {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #ccc;
+        }
         footer p {
             margin: 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -94,7 +128,9 @@
 <header>
     <div class="container">
         <div id="logo">
-            <a href="https://www.rosettacommons.org/" target="_blank"><img src="images/logo.png" alt="RosettaCommons Logo"></a>
+            <a href="https://www.rosettacommons.org/" target="_blank">
+                <img src="images/logo.png" alt="RosettaCommons Logo">
+            </a>
         </div>
         <nav>
             <ul>
@@ -107,48 +143,57 @@
 <div class="container">
     <h1>Poster Session - Summer RosettaCon 2022</h1>
 
-    <!-- Image Gallery -->
+    <!-- Image Gallery with Lightbox Feature -->
     <div class="gallery">
         <!-- Gallery Item 1 -->
-        <div class="gallery-item">
+        <div class="gallery-item lightbox-trigger" data-title="With Dr. David Baker" data-description="A discussion at RosettaCon 2022 about advancements in drug discovery." data-img-src="images/baker.jpg">
             <img src="images/baker.jpg" alt="With Dr. David Baker">
             <h2>With Dr. David Baker</h2>
             <p>A discussion at RosettaCon 2022 about advancements in drug discovery.</p>
         </div>
 
         <!-- Gallery Item 2 -->
-        <div class="gallery-item">
+        <div class="gallery-item lightbox-trigger" data-title="With Dr. John Jumper and Dr. Jens Meiler" data-description="Exploring breakthroughs in machine learning for structural biology." data-img-src="images/jumper.jpg">
             <img src="images/jumper.jpg" alt="With Dr. John Jumper and Dr. Jens Meiler">
             <h2>With Dr. John Jumper and Dr. Jens Meiler</h2>
             <p>Exploring breakthroughs in machine learning for structural biology.</p>
         </div>
 
         <!-- Gallery Item 3 -->
-        <div class="gallery-item">
+        <div class="gallery-item lightbox-trigger" data-title="Discussion" data-description="Insightful conversations on geometric deep learning in drug discovery." data-img-src="images/discussion2.jpg">
             <img src="images/discussion2.jpg" alt="Discussion">
             <h2>Discussion</h2>
             <p>Insightful conversations on geometric deep learning in drug discovery.</p>
         </div>
 
         <!-- Gallery Item 4 -->
-        <div class="gallery-item">
+        <div class="gallery-item lightbox-trigger" data-title="Discussion" data-description="Exploring collaborative efforts in AI for molecular modeling." data-img-src="images/discussion3.jpg">
             <img src="images/discussion3.jpg" alt="Discussion">
             <h2>Discussion</h2>
             <p>Exploring collaborative efforts in AI for molecular modeling.</p>
         </div>
 
         <!-- Gallery Item 5 -->
-        <div class="gallery-item">
+        <div class="gallery-item lightbox-trigger" data-title="Discussion" data-description="Strategies for advancing deep learning applications in drug discovery." data-img-src="images/discussion1.jpg">
             <img src="images/discussion1.jpg" alt="Discussion">
             <h2>Discussion</h2>
             <p>Strategies for advancing deep learning applications in drug discovery.</p>
         </div>
 
         <!-- Gallery Item 6 -->
-        <div class="gallery-item">
+        <div class="gallery-item lightbox-trigger" data-title="My Poster Presentation" data-description="Presented my research on machine learning applications in drug discovery." data-img-src="images/poster.jpg">
             <img src="images/poster.jpg" alt="My Poster">
             <h2>My Poster Presentation</h2>
             <p>Presented my research on machine learning applications in drug discovery.</p>
+        </div>
+    </div>
+
+    <!-- Lightbox Structure -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Enlarged Image">
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-description"></p>
         </div>
     </div>
 </div>
@@ -158,6 +203,31 @@
         <p>www.LiuYunchao.com</p>
     </div>
 </footer>
+
+<script>
+    // JavaScript for lightbox functionality
+    document.addEventListener("DOMContentLoaded", function() {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxTitle = document.getElementById("lightbox-title");
+        const lightboxDescription = document.getElementById("lightbox-description");
+        const triggers = document.querySelectorAll(".lightbox-trigger");
+
+        triggers.forEach(trigger => {
+            trigger.addEventListener("click", function(event) {
+                event.preventDefault();
+                lightbox.style.display = "flex";
+                lightboxImg.src = trigger.dataset.imgSrc;
+                lightboxTitle.textContent = trigger.dataset.title;
+                lightboxDescription.textContent = trigger.dataset.description;
+            });
+        });
+
+        lightbox.addEventListener("click", function() {
+            lightbox.style.display = "none";
+        });
+    });
+</script>
 
 </body>
 </html>
