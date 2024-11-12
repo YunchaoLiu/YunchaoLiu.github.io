@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- academicons -->
+    <link rel="stylesheet" href="../css/academicons.min.css"/>
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+
+
+    <style>
+        /* Consistent gallery container styling */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            background: #fff;
+        }
+
+        .gallery-card:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-title {
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-container">
+            <!-- Gallery Card 1 -->
+
+
+            <!-- Gallery Card 2 -->
+            <a href="RosettaWorkshop2023" class="gallery-card">
+                <img src="RosettaWorkshop2023/images/Dec_6_2023_9_41_46_8.jpg" alt="Cityscapes Gallery" class="gallery-image">
+                <div class="gallery-title">Rosetta Workshop 2023</div>
+            </a>
+
+            <!-- Gallery Card 3 -->
+            <a href="AAAI2023" class="gallery-card">
+                <img src="AAAI2023/images/poster2.jpg" alt="Wildlife Gallery" class="gallery-image">
+                <div class="gallery-title">AAAI2023</div>
+            </a>
+
+            <a href="SummerRosettaCon2022" class="gallery-card">
+                <img src="SummerRosettaCon2022\images\baker.jpg" alt="Summer RosettaCon 2022" class="gallery-image">
+                <div class="gallery-title">Summer RosettaCon 2022</div>
+            </a>
+
+            <!-- Add more gallery cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
