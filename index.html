@@ -31,8 +31,9 @@
 
 	<link rel="shortcut icon" href="images/favicon.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -53,7 +54,7 @@
 	<link rel="stylesheet" href="css/academicons.min.css"/>
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js" defer></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -122,7 +123,7 @@
 				</ul> -->
 
 
-						<li><script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=646b7a&w=a&t=tt&d=Q7gWYguOkDu71cq9vWFcp-lNT8Zlvg01aBMucKt0dl8&co=f2f3f7&ct=000000&cmo=ff0000&cmn=ffc400'></script></li>
+						<li><script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=646b7a&w=a&t=tt&d=Q7gWYguOkDu71cq9vWFcp-lNT8Zlvg01aBMucKt0dl8&co=f2f3f7&ct=000000&cmo=ff0000&cmn=ffc400" async defer></script></li>
 					</ul>
 				</div>
 			</nav>
@@ -170,10 +171,10 @@
 							<!-- <span class="heading-meta">Education</span> -->
                             <br>
                             <br>
-							<span class="heading-meta"">Computational Scientist @ <a href='https://www.broadinstitute.org/' target="_blank">Broad Institute of MIT and Harvard</a></span>
+							<span class="heading-meta"">Scientist @ <a href='https://www.a-star.edu.sg/' target="_blank">A*STAR, Singapore</a></span>
 							<h1 id="colorlib-logo">Yunchao (Lance) Liu (刘运超)</h1>
 							<div><span class="lance-heading animate-box">Short Bio</span></div>
-							<p class="col-md-12 animate-box">Dr. Yunchao (Lance) Liu, is currently a Computational Scientist at the <a href = 'https://www.broadinstitute.org/'>Broad Institute of MIT and Harvard</a>. His research aims at developing novel state-of-the-art geometric deep learning models for understanding genomics.<br> He received his PhD from the Vanderbilt University, where he ws advised by <a href = 'http://www.meilerlab.org/index.php/users/pipage'>Dr. Jens Meiler</a> and <a href = 'https://tylersnetwork.github.io/'>Dr. Tyler Derr</a>. His Ph.D research focused on the development of AI models for drug discovery applications. </p>
+							<p class="col-md-12 animate-box">Dr. Yunchao (Lance) Liu is currently a Scientist at <a href = 'https://www.a-star.edu.sg/' target="_blank">A*STAR</a> in Singapore, working on AI for drug discovery. Before joining A*STAR, he was a Computational Scientist at the <a href = 'https://www.broadinstitute.org/' target="_blank">Broad Institute of MIT and Harvard</a>, where he developed geometric deep learning models for genomics.<br> He received his PhD from Vanderbilt University, where he was advised by <a href = 'http://www.meilerlab.org/index.php/users/pipage'>Dr. Jens Meiler</a> and <a href = 'https://tylersnetwork.github.io/'>Dr. Tyler Derr</a>. His Ph.D research focused on the development of AI models for drug discovery applications. </p>
 
 
 
@@ -186,12 +187,20 @@
 
                             <div><span class="lance-heading animate-box">Research Interests</span>
 								<div class="col-md-12 animate-box">
-								<p>
-                                
-								Topological/Geometric Deep Learning<br>
-                                Generative Models<br>
-								Genomics/Small Molecule/Proteins
-								</p>
+									<div class="row">
+										<div class="col-md-6">
+											<p><strong>AI</strong><br>
+											Topological/Geometric Deep Learning<br>
+											Agentic AI<br>
+											Reinforcement Learning</p>
+										</div>
+										<div class="col-md-6">
+											<p><strong>Biology</strong><br>
+											Small Molecule/Peptide/Protein/RNA<br>
+											Genomics Analysis<br>
+											Epigenetics</p>
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -671,7 +680,7 @@
 
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="blog-entry">
-								<a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c00822" class="blog-img"><img src="images/cat-GNN.png" class="img-responsive" alt="Advancements in Ligand-Based Virtual Screening through the Synergistic Integration of Graph Neural Networks and Expert-Crafted Descriptors"></a>
+								<a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c00822" class="blog-img"><img src="images/cat-GNN.png" class="img-responsive" alt="Advancements in Ligand-Based Virtual Screening through the Synergistic Integration of Graph Neural Networks and Expert-Crafted Descriptors" loading="lazy" decoding="async"></a>
 								<div class="desc">
 									<span><small>May, 2025 </small> | <small> JCIM </small> <!-- | <small> <i class="icon-bubble3"></i> 999</small> --></span>
 									<h3><a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c00822">Advancements in Ligand-Based Virtual Screening through the Synergistic Integration of Graph Neural Networks and Expert-Crafted Descriptors</a><br/><br/><br/></h3>
@@ -682,7 +691,7 @@
 
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
-								<a href="http://www.welqrate.org" class="blog-img"  target="_blank"><img src="images/WelQrate.png" class="img-responsive" alt="www.WelQrate.org" width="1928" height="1048"></a>
+								<a href="http://www.welqrate.org" class="blog-img"  target="_blank"><img src="images/WelQrate.png" class="img-responsive" alt="www.WelQrate.org" width="1928" height="1048" loading="lazy" decoding="async"></a>
 								<div class="desc">
 									<span><small>Dec, 2024 </small> | <small> NeurIPS '24<!-- : Motion, Interaction and Games --></small> <!-- | <small> <i class="icon-bubble3"></i> 999</small> --></span>
 									<h3><a href="http://www.welqrate.org" target="_blank">WelQrate: Defining the Gold Standard in Small Molecule Drug Discovery Benchmarking</a><br/><br/><br/><br/></h3>
@@ -694,7 +703,7 @@
 
                        <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                             <div class="blog-entry">
-                                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26679" class="blog-img" target="_blank"><img src="images/molkgnn.png" class="img-responsive" alt="Molecular Kernel Graph Neural Network (MolKGNN)" width="1928" height="1048"></a>
+                                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26679" class="blog-img" target="_blank"><img src="images/molkgnn.png" class="img-responsive" alt="Molecular Kernel Graph Neural Network (MolKGNN)" width="1928" height="1048" loading="lazy" decoding="async"></a>
                                 <div class="desc">
                                     <span><small>June, 2023 </small> | <small> AAAI'23 </small> <!-- | <small> <i class="icon-bubble3"></i> 999</small> --></span>
                                     <h3><a href="https://ojs.aaai.org/index.php/AAAI/article/view/26679" class="blog-img" target="_blank">Interpretable Chirality-Aware Graph Neural Network for Quantitative Structure Activity Relationship Modeling in Drug Discovery</a></h3>
@@ -705,7 +714,6 @@
 
 
 						
-
 
 
 
@@ -730,7 +738,7 @@
 
                     <!-- Show only one video here -->
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P73oEikxI3Y" title="M2D2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P73oEikxI3Y" title="M2D2" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
 
                     <!-- More Talks button linking to talks.html -->
@@ -758,21 +766,21 @@
                         <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                             <div class="gallery-entry">
                                 <!-- <a href="gallery/SummerRosettaCon2022/images/jumper.jpg" class="gallery-img" target="_blank"> -->
-                                    <img src="gallery/SummerRosettaCon2022/images/jumper.jpg" class="gallery-image img-responsive" alt="Gallery Image 1">
+                                    <img src="gallery/SummerRosettaCon2022/images/jumper.jpg" class="gallery-image img-responsive" alt="Gallery Image 1" loading="lazy" decoding="async">
                                 <!-- </a> -->
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
                             <div class="gallery-entry">
                                 <!-- <a href="gallery/RosettaWorkshop2023/images/Dec_6_2023_9_41_46_7.jpg" class="gallery-img" target="_blank"> -->
-                                    <img src="gallery/RosettaWorkshop2023/images/Dec_6_2023_9_41_46_7.jpg" class="gallery-image img-responsive" alt="Gallery Image 2">
+                                    <img src="gallery/RosettaWorkshop2023/images/Dec_6_2023_9_41_46_7.jpg" class="gallery-image img-responsive" alt="Gallery Image 2" loading="lazy" decoding="async">
                                 <!-- </a> -->
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                             <div class="gallery-entry">
                                 <!-- <a href="gallery\3MT2023\images\1.jpg" class="gallery-img" target="_blank"> -->
-                                    <img src="gallery\3MT2023\images\1.jpg" class="gallery-image img-responsive" alt="Gallery Image 3">
+                                    <img src="gallery/3MT2023/images/1.jpg" class="gallery-image img-responsive" alt="Gallery Image 3" loading="lazy" decoding="async">
                                 <!-- </a> -->
                             </div>
                         </div>
@@ -806,7 +814,7 @@
                                     <i class="icon-mail" style="background-color: #ffffff"></i>
                                 </div>
                                 <div class="colorlib-text">
-                                    <p>liuyunchao[at]broadinstitute[dot]org</p>
+                                    <p>liuyc5[at]a-star.edu.sg</p>
                                 </div>
                             </div>
 
@@ -903,24 +911,24 @@
 	</div><!-- end:colorlib-page -->
 
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.min.js" defer></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.easing.1.3.js" defer></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js" defer></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.waypoints.min.js" defer></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.flexslider-min.js" defer></script>
 	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl.carousel.min.js" defer></script>
 	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.countTo.js" defer></script>
 	<!-- Linkedin-->
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+	<script src="js/main.js" defer></script>
 
 	</body>
 </html>
